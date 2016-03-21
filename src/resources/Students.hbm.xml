@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 21, 2016 5:11:11 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.training.entity.Students" table="STUDENTS">
+        <id name="studentId" type="long">
+            <column name="STUDENTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="studentName" type="java.lang.String">
+            <column name="STUDENTNAME" />
+        </property>
+        <property name="academicScore" type="double">
+            <column name="ACADEMICSCORE" />
+        </property>
+        <property name="sportsScore" type="double">
+            <column name="SPORTSSCORE" />
+        </property>
+        <property name="culturalScore" type="double">
+            <column name="CULTURALSCORE" />
+        </property>
+        <property name="totalScore" type="double">
+            <column name="TOTALSCORE" />
+        </property>
+    </class>
+</hibernate-mapping>
